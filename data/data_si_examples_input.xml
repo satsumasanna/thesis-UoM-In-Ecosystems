@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <obj name="with_uom_in_key">
+        <time_uom_s> 1 </time_uom_s>
+        <length_uom_m> 1 </length_uom_m>
+        <mass_uom_kg> 1 </mass_uom_kg>
+        <electric_current_uom_A> 1 </electric_current_uom_A>
+        <thermodynamic_temperature_uom_K> 1 </thermodynamic_temperature_uom_K>
+        <amount_of_substance_uom_mol> 1 </amount_of_substance_uom_mol>
+        <luminous_intensity_uom_cd> 1 </luminous_intensity_uom_cd>
+        <string> one </string>
+    </obj>
+</data>

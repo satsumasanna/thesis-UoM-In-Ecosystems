@@ -1,0 +1,3 @@
+time,time_uom,length,length_uom,mass,mass_uom,electric_current,electric_current_uom,thermodynamic_temperature,thermodynamic_temperature_uom,amount_of_substance,amount_of_substance_uom,luminous_intensity,luminous_intensity_uom,string
+1.0,second,1.0,meter,11.0,kilogram,1.0,ampere,1.0,kelvin,1.0,mole,1.0,candela,one
+4.0,second,0.0,meter,0.0,kilogram,3.0,ampere,9.0,kelvin,6.0,mole,6.0,candela,8

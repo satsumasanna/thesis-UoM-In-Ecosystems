@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "time_uom_s": 1.0,
+            "length_uom_m": 1.0,
+            "mass_uom_kg": 1.0,
+            "electric_current_uom_A": 1.0,
+            "thermodynamic_temperature_uom_K": 1.0,
+            "amount_of_substance_uom_mol": 1.0,
+            "luminous_intensity_uom_cd": 1.0,
+            "string": "one"
+        },
+        {
+            "id0_length": 1.0,
+            "id0_length_uom": "meter",
+            "id1_length*mass/time**2": 1.0,
+            "id1_length*mass/time**2_uom": "kilogram*meter/second**2",
+            "id2_length/time": 0.2777777777777778,
+            "id2_length/time_uom": "meter/second"
+        }
+    ]
+}

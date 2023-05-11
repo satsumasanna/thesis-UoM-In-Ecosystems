@@ -1,0 +1,2 @@
+time,time_uom,length,length_uom,mass,mass_uom,electric_current,electric_current_uom,thermodynamic_temperature,thermodynamic_temperature_uom,amount_of_substance,amount_of_substance_uom,luminous_intensity,luminous_intensity_uom,string
+1,s,1,m,1,kg,1,A,1,K,1,mol,1,cd,one

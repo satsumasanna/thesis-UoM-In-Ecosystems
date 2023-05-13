@@ -99,6 +99,3 @@ class Unitfier:
 
             data_unitfied.append(temp_obj)
         return data_unitfied
-
-
-print(type(pint.Quantity("3", "y")))

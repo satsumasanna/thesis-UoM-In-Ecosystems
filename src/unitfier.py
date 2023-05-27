@@ -9,7 +9,6 @@ class Unitfier:
         self.uom_separator_start = uom_in_key_separator_start
         self.uom_separator_end = uom_in_key_separator_end
 
-    ### REFACTORS ###
     def add_uom_placeholder(self, data: List[dict], uom_in_key: bool = False) -> List[dict]:
         new_data = []
         for dict in data:
@@ -23,7 +22,6 @@ class Unitfier:
             new_data.append(new_dict)
         return new_data
 
-    ### CONVERTERS ###
     def make_code_format_to_file_format(self, data: List[dict], uom_in_key: bool = False, uom_abbreviated: bool = False) -> List[dict]:
         new_data = []
 

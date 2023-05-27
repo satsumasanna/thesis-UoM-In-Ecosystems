@@ -3,12 +3,15 @@ import pint  # UoM lib
 
 
 class Unitfier:
-
+    # The constructor takes variables to set the suffix and start/end separator.
     def __init__(self, uom_in_value_suffix: str = "_uom", uom_in_key_separator_start: str = "_uom_", uom_in_key_separator_end: str = ""):
         self.uom_suffix = uom_in_value_suffix
         self.uom_separator_start = uom_in_key_separator_start
         self.uom_separator_end = uom_in_key_separator_end
-
+    
+    # A method that adds separators or suffixes, with a unit of measurement placeholder value (x), to all elements in a list of dictionaries. 
+    # The method takes a list of dictionaries, to add the placeholders too, as input and a boolean for whether separators (uom_in_key = True) 
+    # or suffixes (uom_in_key = False) should be added. The method outputs a list of dictionaries with placeholders added.
     def add_uom_placeholder(self, data: List[dict], uom_in_key: bool = False) -> List[dict]:
         new_data = []
         for dict in data:
@@ -21,7 +24,11 @@ class Unitfier:
                     new_dict[key + self.uom_suffix] = "x"
             new_data.append(new_dict)
         return new_data
-
+    
+    # A method that makes data in “code format” into “file format”. The method takes a list of dictionaries as input, containing the data that
+    # is to be converted. The method takes a boolean for whether the file format data should use separators (uom_in_key = True) or suffixes 
+    # (uom_in_key = False). The method takes an input for whether the unit of measurement names should be given in full or abbreviated form. 
+    # The method outputs a list of dictionaries with data in file format.
     def make_code_format_to_file_format(self, data: List[dict], uom_in_key: bool = False, uom_abbreviated: bool = False) -> List[dict]:
         new_data = []
 
@@ -43,7 +50,10 @@ class Unitfier:
             new_data.append(new_dict)
 
         return new_data
-
+    
+    # A method that makes a list of Pint quantities into data in code format. The method takes a list of Pint quantities as input. The method takes a boolean
+    # for whether the file format data should use separators (uom_in_key = True) or suffixes (uom_in_key = False). The method takes an input for whether the 
+    # unit of measurement names should be given in full or abbreviated form. The method outputs a dictionary of data in code format.
     def make_pint_quantities_to_file_format(self, quantities: List[pint.Quantity], uom_in_key: bool = False, uom_abbreviated: bool = False) -> List[dict]:
         new_dict = {}
         for i, quant in enumerate(quantities):
@@ -60,6 +70,8 @@ class Unitfier:
 
         return [new_dict]
 
+    # A method that makes data in “file format” into “code format”. The method takes a list of dictionaries as input, containing the data that is to be converted. 
+    # The method outputs a list of dictionaries with data in code format.
     def make_file_format_to_code_format(self, data: List[dict]) -> List[dict]:
         data_unitfied = []
 

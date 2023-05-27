@@ -51,9 +51,9 @@ class Unitfier:
 
         return new_data
     
-    # A method that makes a list of Pint quantities into data in code format. The method takes a list of Pint quantities as input. The method takes a boolean
+    # A method that makes a list of Pint quantities into data in file format. The method takes a list of Pint quantities as input. The method takes a boolean
     # for whether the file format data should use separators (uom_in_key = True) or suffixes (uom_in_key = False). The method takes an input for whether the 
-    # unit of measurement names should be given in full or abbreviated form. The method outputs a dictionary of data in code format.
+    # unit of measurement names should be given in full or abbreviated form. The method outputs a dictionary of data in file format.
     def make_pint_quantities_to_file_format(self, quantities: List[pint.Quantity], uom_in_key: bool = False, uom_abbreviated: bool = False) -> List[dict]:
         new_dict = {}
         for i, quant in enumerate(quantities):
